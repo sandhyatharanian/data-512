@@ -23,7 +23,9 @@ For this assignment, I have combined data about Wikipedia page traffic from two 
 ## Data Processing:
 
 For each API, I have collected the data for all available months and then saved the raw results into 5 separate JSON source data files with the following naming convention – “apiname_accesstype_firstmonth-lastmonth.json”. The final data is a combination of all 5 .json files which was then saved as “en-wikipedia_traffic_200712-202008.csv” file. Given below is the description of the columns available in the final csv.
-Column 	Value
+
+| Column | Value |
+| ------ | ----- |
 year 	YYYY
 month 	MM
 pagecount_all_views 	No. of views for all users (desktop and mobile combined) from the Legacy Pagecounts API
