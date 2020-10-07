@@ -37,9 +37,9 @@ For each API, I have collected the data for all available months and then saved 
 
 ## Note:
     
-    *For data collected from the Pageviews API, the monthly values for mobile-app and mobile-web was combined to create a total mobile traffic count for each month.
-    <li>For all data, the value of timestamp was separated into four-digit year (YYYY) and two-digit month (MM) and values for day and hour was discarded.</li>
-    <li>For all months with 0 pageviews for a given access method (e.g. desktop-site, mobile-app), that value for that (column, month) was listed as 0.</li>
-    <li>The data from Pageview API (but not the Pagecount API) excludes users such as web crawlers or spiders.</li>
-    <li>There is about 1 year of overlapping traffic data between the two APIs.</li>
-    </ol>
+    * For data collected from the Pageviews API, the monthly values for mobile-app and mobile-web was combined to create a total mobile traffic count for each month.
+    * For all data, the value of timestamp was separated into four-digit year (YYYY) and two-digit month (MM) and values for day and hour was discarded.
+    * For all months with 0 pageviews for a given access method (e.g. desktop-site, mobile-app), that value for that (column, month) was listed as 0.
+    * The data from Pageview API (but not the Pagecount API) excludes users such as web crawlers or spiders.
+    * There is about 1 year of overlapping traffic data between the two APIs.
+
