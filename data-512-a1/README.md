@@ -1,4 +1,4 @@
-# Data 512A Au 20: Human-Centered Data Science Assignment 1 - Data Curation
+## Data 512A Au 20: Human-Centered Data Science Assignment 1 - Data Curation
 
 ## Objective:
 
