@@ -1,5 +1,4 @@
-# Data 512A Au 20: Human-Centered Data Science 
-# Assignment 1 - Data Curation
+# Data 512A Au 20: Human-Centered Data Science Assignment 1 - Data Curation
 
 ## Objective:
 
@@ -22,7 +21,7 @@ For this assignment, I have combined data about Wikipedia page traffic from two 
 
 ## Data Processing:
 
-For each API, I have collected the data for all available months and then saved the raw results into 5 separate JSON source data files with the following naming convention – “apiname_accesstype_firstmonth-lastmonth.json”. The final data is a combination of all 5 .json files which was then saved as “en-wikipedia_traffic_200712-202008.csv” file. Given below is the description of the columns available in the final csv.
+For each of the 2 API, the data is collected for all available months and the raw results are saved as 5 separate JSON source data files with the naming convention – “apiname_accesstype_firstmonth-lastmonth.json”. The final data is a combination of all 5 .json files which is then saved as “en-wikipedia_traffic_200712-202008.csv”. Given below is the description of the columns available in the final csv.
 
 | Column | Value |
 | ------ | ----- |
