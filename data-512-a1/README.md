@@ -15,8 +15,9 @@ The Wikimedia REST API offers access to Wikimedia's content and metadata in mach
 ## API documentation:
 
 For this assignment, the data is from the Wikipedia page traffic which is retrieved using two different Wikimedia REST API endpoints (Pagecounts and Pageviews).
-        The Legacy Pagecounts API (documentation, endpoint) provides access to desktop and mobile traffic data from December 2007 through July 2016.
-        The Pageviews API (documentation, endpoint) provides access to desktop, mobile web, and mobile app traffic data from July 2015 through last month.
+
+-The Legacy Pagecounts API ([documentation](https://wikitech.wikimedia.org/wiki/Analytics/AQS/Legacy_Pagecounts), [endpoint](https://wikimedia.org/api/rest_v1/#/Pagecounts_data_(legacy)/get_metrics_legacy_pagecounts_aggregate_project_access_site_granularity_start_end)) provides access to desktop and mobile traffic data from December 2007 through July 2016.
+-The Pageviews API ([documentation](https://wikitech.wikimedia.org/wiki/Analytics/AQS/Pageviews), [endpoint](https://wikimedia.org/api/rest_v1/#/Pageviews_data/get_metrics_pageviews_aggregate_project_access_agent_granularity_start_end)) provides access to desktop, mobile web, and mobile app traffic data from July 2015 through last month.
 
 ## Data Processing:
 
@@ -35,7 +36,7 @@ For each of the 2 API, the data is collected for all available months and the ra
 
 ## Note:
 
-- For data collected from the Pageviews API, the monthly values for mobile-app and mobile-web was combined to create a total mobile traffic count for each month.
+- For the data collected from the Pageviews API, the monthly values for mobile-app and mobile-web was combined to create a total mobile traffic count for each month.
 - For all data, the value of timestamp was separated into four-digit year (YYYY) and two-digit month (MM) and values for day and hour was discarded.
 - For all months with 0 pageviews for a given access method (e.g. desktop-site, mobile-app), that value for that (column, month) was listed as 0.
 - The data from Pageview API (but not the Pagecount API) excludes users such as web crawlers or spiders.
