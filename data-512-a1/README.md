@@ -26,19 +26,20 @@ For each API, I have collected the data for all available months and then saved 
 
 | Column | Value |
 | ------ | ----- |
-year 	YYYY
-month 	MM
-pagecount_all_views 	No. of views for all users (desktop and mobile combined) from the Legacy Pagecounts API
-pagecount_desktop_views No. of views for desktop users from the Legacy Pagecounts API 	
-pagecount_mobile_views 	No. of views for mobile users from the Legacy Pagecounts API
-pageview_all_views 	No. of views for all users (desktop and mobile combined) from the Pageviews API
-pageview_desktop_views 	No. of views for desktop users from the Pageviews API
-pageview_mobile_views 	No. of views for mobile users from the Pageviews API
+| year | YYYY |
+| month |	MM |
+| pagecount_all_views |	No. of views for all users (desktop and mobile combined) from the Legacy Pagecounts API |
+| pagecount_desktop_views | No. of views for desktop users from the Legacy Pagecounts API |	
+| pagecount_mobile_views | No. of views for mobile users from the Legacy Pagecounts API |
+| pageview_all_views | No. of views for all users (desktop and mobile combined) from the Pageviews API |
+| pageview_desktop_views | No. of views for desktop users from the Pageviews API |
+| pageview_mobile_views | No. of views for mobile users from the Pageviews API |
 
 ## Note:
-
-    * For data collected from the Pageviews API, the monthly values for mobile-app and mobile-web was combined to create a total mobile traffic count for each month.
-    * For all data, the value of timestamp was separated into four-digit year (YYYY) and two-digit month (MM) and values for day and hour was discarded.
-    * For all months with 0 pageviews for a given access method (e.g. desktop-site, mobile-app), that value for that (column, month) was listed as 0.
-    * The data from Pageview API (but not the Pagecount API) excludes users such as web crawlers or spiders.
-    * There is about 1 year of overlapping traffic data between the two APIs.
+    <ol>
+    <li>For data collected from the Pageviews API, the monthly values for mobile-app and mobile-web was combined to create a total mobile traffic count for each month.</li>
+    <li>For all data, the value of timestamp was separated into four-digit year (YYYY) and two-digit month (MM) and values for day and hour was discarded.</li>
+    <li>For all months with 0 pageviews for a given access method (e.g. desktop-site, mobile-app), that value for that (column, month) was listed as 0.</li>
+    <li>The data from Pageview API (but not the Pagecount API) excludes users such as web crawlers or spiders.</li>
+    <li>There is about 1 year of overlapping traffic data between the two APIs.</li>
+    </ol>
