@@ -14,8 +14,7 @@ The Wikimedia REST API offers access to Wikimedia's content and metadata in mach
 
 ## API documentation:
 
-For this assignment, I have combined data about Wikipedia page traffic from two different Wikimedia REST API endpoints (Pagecounts and Pageviews) into a single dataset.
-
+For this assignment, the data is from the Wikipedia page traffic which is retrieved using two different Wikimedia REST API endpoints (Pagecounts and Pageviews).
         The Legacy Pagecounts API (documentation, endpoint) provides access to desktop and mobile traffic data from December 2007 through July 2016.
         The Pageviews API (documentation, endpoint) provides access to desktop, mobile web, and mobile app traffic data from July 2015 through last month.
 
