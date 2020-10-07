@@ -2,7 +2,7 @@
 
 ## Objective:
 
-The goal of this assignment is to construct, analyze and publish a dataset of monthly traffic on English Wikipedia from January 1 2008 through August 30 2020. All of the analysis will be performed on a single Jupyter notebook and all data collected from the API will be made available as 5 .json files which will then be processed and combined to form the final .csv file.The purpose of the assignment is to familiarize with the Jupyter Notebook environment and some best practices for open scientific research in designing and implementing the project and make the project fully reproducible (from the data collection phase through the data analysis phase) by others using a GitHub repository.
+The goal of this assignment is to construct, analyze and publish a dataset of monthly traffic on English Wikipedia from January 1 2008 through August 30 2020. All of the analysis will be performed on a single Jupyter notebook and all data collected from the API will be made available as 5 `JSON` files which will then be processed and combined to form the final `csv` file.The purpose of the assignment is to familiarize with the Jupyter Notebook environment and some best practices for open scientific research in designing and implementing the project and make the project fully reproducible (from the data collection phase through the data analysis phase) by others using a GitHub repository.
 
 ## License of the source data and terms of use:
 
