@@ -18,8 +18,7 @@ Each of these 3 datasets contain 3 tsv files per dataset for which the link is p
 
  - Toxicity : [https://figshare.com/articles/dataset/Wikipedia_Talk_Labels_Toxicity/4563973](https://figshare.com/articles/dataset/Wikipedia_Talk_Labels_Toxicity/4563973)
  - Aggression : [https://figshare.com/articles/dataset/Wikipedia_Talk_Labels_Aggression/4267550](https://figshare.com/articles/dataset/Wikipedia_Talk_Labels_Aggression/4267550)
-- Personal Attack : [https://figshare.com/articles/dataset/Wikipedia_Talk_Labels_Personal_Attacks/4054689](https://figshare.com/articles/dataset/Wikipedia_Talk_Labels_Aggression/4267550)
-
+- Personal Attack : [https://figshare.com/articles/dataset/Wikipedia_Talk_Labels_Personal_Attacks/4054689](https://figshare.com/articles/dataset/Wikipedia_Talk_Labels_Personal_Attacks/4054689)
 ## Dataset Description:
 
 Input Files:
