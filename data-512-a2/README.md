@@ -28,7 +28,7 @@ Detailed schema for each of these dataset can be found [here](https://meta.wikim
 
 ## Input Files used:
 
-For this analysis I have used 2 out of the 3 datasets which can be found in the [Input Data Files](https://github.com/sandhyatharanian/data-512/tree/main/data-512-a2/Input%20Data%20Files) folder. These files are `.zip` files with toxcity split as 'Toxicity_1.zip' and 'Toxicity_2.zip' due to GIT's size constraint.
+For this analysis I have used 2 out of the 3 datasets which can be found in the [Input Data Files](https://github.com/sandhyatharanian/data-512/tree/main/data-512-a2/Input%20Data%20Files) folder. These files are `.zip` files with toxcity split as `Toxicity_1.zip` and `Toxicity_2.zip` due to GIT's size constraint.
 
 Dataset Used for this analysis are listed below. Please note that I have used all the 3 files for each of the 2 datasets.
 
@@ -40,6 +40,7 @@ Dataset Used for this analysis are listed below. Please note that I have used al
    - attack_annotated_comments.tsv
    - attack_annotations.tsv
    - attack_worker_demographics.tsv
+   
    
    
 **Analysis 1 -** Uses the toxicity dataset with all three `.tsv` files comibined. Given below is the description of the columns along with the user generated calculated field available in the final dataset used for this analysis. 
@@ -69,6 +70,7 @@ Dataset Used for this analysis are listed below. Please note that I have used al
 | binned_wordcount | User devrived | user generated bins to group the word count of the comments |
 
 
+
 **Analysis 2 -** Uses the personal attack and toxicity dataset with all six `.tsv` files comibined. Given below is the description of the columns along with the user generated calculated field available in the final dataset used for this analysis. 
 
 **Note-** 
@@ -96,7 +98,6 @@ Dataset Used for this analysis are listed below. Please note that I have used al
 | education | attack_worker_demographics.tsv | The highest education level obtained by the crowd-worker |
 | toxicity | toxicity_annotations.tsv | Indicator variable for whether the worker thought the comment is toxic (1) or non-toxic (0) |
 | toxicity_score | toxicity_annotations.tsv | Categorical variable ranging from very toxic (-2), to neutral (0), to very healthy (2) |
-
 
 
 ## Required resources
