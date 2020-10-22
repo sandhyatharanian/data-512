@@ -19,14 +19,26 @@ Each of these 3 datasets contain 3 tsv files per dataset for which the link is p
  - Toxicity : [https://figshare.com/articles/dataset/Wikipedia_Talk_Labels_Toxicity/4563973](https://figshare.com/articles/dataset/Wikipedia_Talk_Labels_Toxicity/4563973)
  - Aggression : [https://figshare.com/articles/dataset/Wikipedia_Talk_Labels_Aggression/4267550](https://figshare.com/articles/dataset/Wikipedia_Talk_Labels_Aggression/4267550)
 - Personal Attack : [https://figshare.com/articles/dataset/Wikipedia_Talk_Labels_Personal_Attacks/4054689](https://figshare.com/articles/dataset/Wikipedia_Talk_Labels_Personal_Attacks/4054689)
-## Dataset Description:
-
-Input Files:
 
 
+## Dataset Description: 
+Schema for each of these dataset can be found [here](https://meta.wikimedia.org/wiki/Research:Detox/Data_Release).
 
-Output Files:
 
+## Input Files:
+
+For this analysis I have used 2 out of the 3 datasets which can be found in the [Input Data Files] (https://github.com/sandhyatharanian/data-512/tree/main/data-512-a2/Input%20Data%20Files) folder. These files are '.zip' files with toxcity split as 'Toxicity_1.zip' and 'Toxicity_2.zip' due to GIT's size constraint.
+
+Dataset Used for this analysis are listed below. Please note that I have used all the 3 files for each of the 2 datasets.
+
+1. Toxicity
+   - toxicity_annotated_comments.tsv
+   - toxicity_annotations.tsv
+   - toxicity_worker_demographics.tsv
+2. Personal Attack
+   - attack_annotated_comments.tsv
+   - attack_annotations.tsv
+   - attack_worker_demographics.tsv
 
 ## Reflection
 
@@ -50,3 +62,8 @@ Output Files:
 
 ## License Information:
 License and copy right information for all of the 3 datasets can be found [here](https://creativecommons.org/publicdomain/zero/1.0/).
+
+
+## Citation
+The dataset can be cited as:
+     Wulczyn, Ellery; Thain, Nithum; Dixon, Lucas (2016): Wikipedia Detox. Figshare [https://figshare.com/projects/Wikipedia_Talk/16731]
