@@ -137,4 +137,4 @@ License and copy right information for all of the 3 datasets can be found [here]
 ## Citation
 
 The dataset can be cited as:
-     Wulczyn, Ellery; Thain, Nithum; Dixon, Lucas (2016): Wikipedia Detox. Figshare [https://figshare.com/projects/Wikipedia_Talk/16731]
+     Wulczyn, Ellery; Thain, Nithum; Dixon, Lucas (2016): Wikipedia Detox. Figshare [https://figshare.com/projects/Wikipedia_Talk/16731](https://figshare.com/projects/Wikipedia_Talk/16731)
