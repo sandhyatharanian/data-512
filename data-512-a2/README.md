@@ -100,11 +100,17 @@ Dataset Used for this analysis are listed below. Please note that I have used al
 | toxicity | toxicity_annotations.tsv | Indicator variable for whether the worker thought the comment is toxic (1) or non-toxic (0) |
 | toxicity_score | toxicity_annotations.tsv | Categorical variable ranging from very toxic (-2), to neutral (0), to very healthy (2) |
 
-Code is available in - ** Bias in data.ipynb ** file. 
+Code is available in - **[Bias in data.ipynb]**(https://github.com/sandhyatharanian/data-512/tree/main/data-512-a2/Input%20Data%20Files) file. 
 
-## Required Installations
+## Python packages used
 
+- pandas version 1.0.3
+- numpy  version 1.18.1
+- seaborn  version 0.10.0
+- matplotlib version 3.1.3
+- tabulate version 0.8.7
 
+Note - Packages used along with its version can be found using **pip list** command.
 
 ## Required resources
 
