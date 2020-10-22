@@ -105,7 +105,7 @@ Dataset Used for this analysis are listed below. Please note that I have used al
 
 ## Output Files:
  - Code - **[Bias in data.ipynb]**(https://github.com/sandhyatharanian/data-512/tree/main/data-512-a2/Input%20Data%20Files) file. 
- - Visuals - Output visuals are sorted as per the order of execution in the jupyter notebook and stored [here](https://github.com/sandhyatharanian/data-512/tree/main/data-512-a2/Output%20Visuals)
+ - Visuals - Output visuals are sorted as per the order of execution in the jupyter notebook and stored [here](https://github.com/sandhyatharanian/data-512/tree/main/data-512-a2/Output%20Visuals).
 
 ## Python packages used
 
