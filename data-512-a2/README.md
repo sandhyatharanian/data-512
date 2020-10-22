@@ -104,7 +104,7 @@ Dataset Used for this analysis are listed below. Please note that I have used al
 | binned_wordcount | User devrived | user generated bins to group the word count of the comments |
 
 ## Output Files:
- - Code - **[Bias in data.ipynb]**(https://github.com/sandhyatharanian/data-512/blob/main/data-512-a2/Assignment%202%20Bias%20in%20data.ipynb) file. 
+ - Code - [Bias in data.ipynb](https://github.com/sandhyatharanian/data-512/blob/main/data-512-a2/Assignment%202%20Bias%20in%20data.ipynb) file. 
  - Visuals - Output visuals are sorted as per the order of execution in the jupyter notebook and stored [here](https://github.com/sandhyatharanian/data-512/tree/main/data-512-a2/Output%20Visuals).
 
 ## Python packages used
