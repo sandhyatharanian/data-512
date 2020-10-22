@@ -100,6 +100,11 @@ Dataset Used for this analysis are listed below. Please note that I have used al
 | toxicity | toxicity_annotations.tsv | Indicator variable for whether the worker thought the comment is toxic (1) or non-toxic (0) |
 | toxicity_score | toxicity_annotations.tsv | Categorical variable ranging from very toxic (-2), to neutral (0), to very healthy (2) |
 
+Code is available in - ** Bias in data.ipynb ** file. 
+
+## Required Installations
+
+
 
 ## Required resources
 
