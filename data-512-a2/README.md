@@ -14,7 +14,7 @@ The goal of this assignment is to identify potential sources of bias (if any) th
 
 The corpus used in this assignment is called the Wikipedia Talk corpus which consists of three datasets. Each dataset contains thousands of online discussion posts made by Wikipedia editors who were discussing how to write and edit Wikipedia articles. Crowdworkers labelled these posts for three kinds of hostile speech: “toxicity”, “aggression”, and “personal attacks”. Many posts in each dataset were labelled by multiple crowdworkers for each type of hostile speech, to improve accuracy. 
 
-Each of these 3 datasets contain 3 tsv files per dataset for which the link is provided below -
+Each of these 3 datasets contain 3 `.tsv` files per dataset for which the link is provided below -
 
  - Toxicity : [https://figshare.com/articles/dataset/Wikipedia_Talk_Labels_Toxicity/4563973](https://figshare.com/articles/dataset/Wikipedia_Talk_Labels_Toxicity/4563973)
  - Aggression : [https://figshare.com/articles/dataset/Wikipedia_Talk_Labels_Aggression/4267550](https://figshare.com/articles/dataset/Wikipedia_Talk_Labels_Aggression/4267550)
@@ -28,7 +28,7 @@ Detailed schema for each of these dataset can be found [here](https://meta.wikim
 
 ## Input Files used:
 
-For this analysis I have used 2 out of the 3 datasets which can be found in the [Input Data Files] (https://github.com/sandhyatharanian/data-512/tree/main/data-512-a2/Input%20Data%20Files) folder. These files are `.zip` files with toxcity split as 'Toxicity_1.zip' and 'Toxicity_2.zip' due to GIT's size constraint.
+For this analysis I have used 2 out of the 3 datasets which can be found in the [Input Data Files](https://github.com/sandhyatharanian/data-512/tree/main/data-512-a2/Input%20Data%20Files) folder. These files are `.zip` files with toxcity split as 'Toxicity_1.zip' and 'Toxicity_2.zip' due to GIT's size constraint.
 
 Dataset Used for this analysis are listed below. Please note that I have used all the 3 files for each of the 2 datasets.
 
@@ -41,11 +41,14 @@ Dataset Used for this analysis are listed below. Please note that I have used al
    - attack_annotations.tsv
    - attack_worker_demographics.tsv
    
-**Analysis 1 -** Uses the Toxicity dataset with all three `.tsv` files comibined. Given below is the description of the columns along with the user generated calculated field available in the final dataset used for this analysis. 
+   
+**Analysis 1 -** Uses the toxicity dataset with all three `.tsv` files comibined. Given below is the description of the columns along with the user generated calculated field available in the final dataset used for this analysis. 
 
-**Note-** Duplicate columns created during the join was dropped inorder to have a clean dataset.
+**Note-** 
+ - Duplicate columns created during the join was dropped inorder to have a clean dataset.
+ - The dataset was checked for blank/null values. 
 
-| Column | Original Dataset | Value |
+| Column | Dataset | Value |
 | ------ | ----- | ----- |
 | rev_id | toxicity_annotations.tsv | MediaWiki revision id of the edit that added the comment to a talk page |
 | worker_id | toxicity_annotations.tsv | Anonymized crowd-worker id |
@@ -64,6 +67,37 @@ Dataset Used for this analysis are listed below. Please note that I have used al
 | comment_length | User devrived | character count of the comments |
 | total_words | User devrived | word count of the comments |
 | binned_wordcount | User devrived | user generated bins to group the word count of the comments |
+
+
+**Analysis 2 -** Uses the personal attack and toxicity dataset with all six `.tsv` files comibined. Given below is the description of the columns along with the user generated calculated field available in the final dataset used for this analysis. 
+
+**Note-** 
+ - Duplicate columns created during the join was dropped inorder to have a clean dataset.
+ - The dataset was checked for blank/null values. 
+
+| Column | Dataset | Value |
+| ------ | ----- | ----- |
+| rev_id | attack_annotations.tsv | MediaWiki revision id of the edit that added the comment to a talk page |
+| worker_id | attack_annotations.tsv | Anonymized crowd-worker id |
+| quoting_attack | attack_annotations.tsv | Indicator for whether the worker thought the comment is quoting or reporting a personal attack that originated in a different comment |
+| recipient_attack | attack_annotations.tsv | Indicator for whether the worker thought the comment contains a personal attack directed at the recipient of the comment |
+| third_party_attack | attack_annotations.tsv | Indicator for whether the worker thought the comment contains a personal attack directed at a third party |
+| other_attack | attack_annotations.tsv | Indicator for whether the worker thought the comment contains a personal attack but is not quoting attack, a recipient attack or third party attack |
+| attack | attack_annotations.tsv | Indicator for whether the worker thought the comment contains any form of personal attack |
+| comment | attack_annotated_comments.tsv | Comment text |
+| year | attack_annotated_comments.tsv | The year the comment was posted in |
+| logged_in | attack_annotated_comments.tsv | Indicator for whether the user who made the comment was logged in. Takes on values in {0, 1} |
+| ns | attack_annotated_comments.tsv |  Namespace of the discussion page the comment was made in. Takes on values in {user, article} |
+| sample | attack_annotated_comments.tsv | Indicates whether the comment came via random sampling or blocked {random, blocked} |
+| split | attack_annotated_comments.tsv | Describes if the comments where split into train, dev and test sets for the model. Takes on values in {train, dev, test} |
+| gender | attack_worker_demographics.tsv | The gender of the crowd-worker. Takes a value in {'male', 'female', and 'other'} |
+| english_first_language | attack_worker_demographics.tsv | Does the crowd-worker describe English as their first language. Takes a value in {0, 1} |
+| age_group | attack_worker_demographics.tsv | The age group of the crowd-worker. Takes on values in {'Under 18', '18-30', '30-45', '45-60', 'Over 60'} |
+| education | attack_worker_demographics.tsv | The highest education level obtained by the crowd-worker |
+| toxicity | toxicity_annotations.tsv | Indicator variable for whether the worker thought the comment is toxic (1) or non-toxic (0) |
+| toxicity_score | toxicity_annotations.tsv | Categorical variable ranging from very toxic (-2), to neutral (0), to very healthy (2) |
+
+
 
 ## Required resources
 
