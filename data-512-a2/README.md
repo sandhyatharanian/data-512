@@ -2,15 +2,15 @@
 
 ## Objective:
 
-The goal of this assignment is to identify, if any, potential sources of bias that may exist in a corpus of human-annotated datasets, and to describe a few implications of how these biases might impact the behavior of machine learning models trained on the data, when those models are used for research purposes or to power data-driven applications. Additionally, demonstrate that we are able to perform a self-directed exploratory data analysis and think critically about the implications of our findings on how the data is collected and processed and how reliabile our findings are based on that data. To successfully complete this assignment we will need to follow the below steps:
+The goal of this assignment is to identify potential sources of bias (if any) that may exist in a corpus of human-annotated datasets, and to describe the implications of how these biases might impact the behavior of machine learning models trained on the data or used for research purposes or to power data-driven applications. Additionally, demonstrate that we are able to perform a self-directed exploratory data analysis and think critically about the implications of our findings on how the data is collected and processed and how reliabile our findings are based on that data. To successfully complete this assignment we will need to follow the below steps:
 
-- Identify potential sources of bias in at least two of the three datasets
-- Describe implications of how the dataset bias could lead to potential unintended negative consequences of using machine learning models trained on these datasets in scientific research and/or data-driven software applications
-- Suggest how these sources of bias could be corrected or otherwise accounted for in order to avoid these unintended consequences
-- Demonstrate the ability to use literate programming capabilities of Jupyter Notebooks in order to document the analysis (in programming cells, tables, and graphs) and  insights, questions, and explanations (in markdown cells) within the same document.
+- Identify potential sources of bias in at least two of the three datasets.
+- Describe implications of how the dataset bias could lead to potential unintended negative consequences of using machine learning models trained on these datasets in scientific research and/or data-driven software applications.
+- Suggest how these sources of bias could be corrected or otherwise accounted for in order to avoid these unintended consequences.
+- Demonstrate the ability to use literate programming capabilities of Jupyter Notebooks in order to document the analysis (in programming cells, tables, and graphs) and insights, questions, and explanations (in markdown cells) within the same document.
 
 
-## Datasets used:
+## Dataset Details:
 
 The corpus used in this assignment is called the Wikipedia Talk corpus which consists of three datasets. Each dataset contains thousands of online discussion posts made by Wikipedia editors who were discussing how to write and edit Wikipedia articles. Crowdworkers labelled these posts for three kinds of hostile speech: “toxicity”, “aggression”, and “personal attacks”. Many posts in each dataset were labelled by multiple crowdworkers for each type of hostile speech, to improve accuracy. 
 
@@ -22,10 +22,11 @@ Each of these 3 datasets contain 3 tsv files per dataset for which the link is p
 
 
 ## Dataset Description: 
-Schema for each of these dataset can be found [here](https://meta.wikimedia.org/wiki/Research:Detox/Data_Release).
+
+Detailed schema for each of these dataset can be found [here](https://meta.wikimedia.org/wiki/Research:Detox/Data_Release).
 
 
-## Input Files:
+## Dataset used:
 
 For this analysis I have used 2 out of the 3 datasets which can be found in the [Input Data Files] (https://github.com/sandhyatharanian/data-512/tree/main/data-512-a2/Input%20Data%20Files) folder. These files are '.zip' files with toxcity split as 'Toxicity_1.zip' and 'Toxicity_2.zip' due to GIT's size constraint.
 
@@ -40,8 +41,10 @@ Dataset Used for this analysis are listed below. Please note that I have used al
    - attack_annotations.tsv
    - attack_worker_demographics.tsv
 
+
 ## Reflection
 
+What biases to expect to find in the data and why? Some key observations of
 
 ## Required resources
 
@@ -61,9 +64,11 @@ Dataset Used for this analysis are listed below. Please note that I have used al
 
 
 ## License Information:
+
 License and copy right information for all of the 3 datasets can be found [here](https://creativecommons.org/publicdomain/zero/1.0/).
 
 
 ## Citation
+
 The dataset can be cited as:
      Wulczyn, Ellery; Thain, Nithum; Dixon, Lucas (2016): Wikipedia Detox. Figshare [https://figshare.com/projects/Wikipedia_Talk/16731]
