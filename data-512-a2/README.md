@@ -103,7 +103,9 @@ Dataset Used for this analysis are listed below. Please note that I have used al
 | total_words | User devrived | word count of the comments |
 | binned_wordcount | User devrived | user generated bins to group the word count of the comments |
 
-Code is available in - **[Bias in data.ipynb]**(https://github.com/sandhyatharanian/data-512/tree/main/data-512-a2/Input%20Data%20Files) file. 
+## Output Files:
+ - Code - **[Bias in data.ipynb]**(https://github.com/sandhyatharanian/data-512/tree/main/data-512-a2/Input%20Data%20Files) file. 
+ - Visuals - Output visuals are stored [here]
 
 ## Python packages used
 
