@@ -99,6 +99,9 @@ Dataset Used for this analysis are listed below. Please note that I have used al
 | education | attack_worker_demographics.tsv | The highest education level obtained by the crowd-worker |
 | toxicity | toxicity_annotations.tsv | Indicator variable for whether the worker thought the comment is toxic (1) or non-toxic (0) |
 | toxicity_score | toxicity_annotations.tsv | Categorical variable ranging from very toxic (-2), to neutral (0), to very healthy (2) |
+| comment_length | User devrived | character count of the comments |
+| total_words | User devrived | word count of the comments |
+| binned_wordcount | User devrived | user generated bins to group the word count of the comments |
 
 Code is available in - **[Bias in data.ipynb]**(https://github.com/sandhyatharanian/data-512/tree/main/data-512-a2/Input%20Data%20Files) file. 
 
