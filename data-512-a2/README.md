@@ -26,9 +26,9 @@ Each of these 3 datasets contain 3 tsv files per dataset for which the link is p
 Detailed schema for each of these dataset can be found [here](https://meta.wikimedia.org/wiki/Research:Detox/Data_Release).
 
 
-## Dataset used:
+## Input Files used:
 
-For this analysis I have used 2 out of the 3 datasets which can be found in the [Input Data Files] (https://github.com/sandhyatharanian/data-512/tree/main/data-512-a2/Input%20Data%20Files) folder. These files are '.zip' files with toxcity split as 'Toxicity_1.zip' and 'Toxicity_2.zip' due to GIT's size constraint.
+For this analysis I have used 2 out of the 3 datasets which can be found in the [Input Data Files] (https://github.com/sandhyatharanian/data-512/tree/main/data-512-a2/Input%20Data%20Files) folder. These files are `.zip` files with toxcity split as 'Toxicity_1.zip' and 'Toxicity_2.zip' due to GIT's size constraint.
 
 Dataset Used for this analysis are listed below. Please note that I have used all the 3 files for each of the 2 datasets.
 
@@ -40,11 +40,30 @@ Dataset Used for this analysis are listed below. Please note that I have used al
    - attack_annotated_comments.tsv
    - attack_annotations.tsv
    - attack_worker_demographics.tsv
+   
+**Analysis 1 -** Uses the Toxicity dataset with all three `.tsv` files comibined. Given below is the description of the columns along with the user generated calculated field available in the final dataset used for this analysis. 
 
+**Note-** Duplicate columns created during the join was dropped inorder to have a clean dataset.
 
-## Reflection
-
-What biases to expect to find in the data and why? Some key observations of
+| Column | Original Dataset | Value |
+| ------ | ----- | ----- |
+| rev_id | toxicity_annotations.tsv | MediaWiki revision id of the edit that added the comment to a talk page |
+| worker_id | toxicity_annotations.tsv | Anonymized crowd-worker id |
+| toxicity | toxicity_annotations.tsv | Indicator variable for whether the worker thought the comment is toxic (1) or non-toxic (0) |
+| toxicity_score | toxicity_annotations.tsv | Categorical variable ranging from very toxic (-2), to neutral (0), to very healthy (2) |
+| comment | toxicity_annotated_comments.tsv | Comment text |
+| year | toxicity_annotated_comments.tsv | The year the comment was posted in |
+| logged_in | toxicity_annotated_comments.tsv | Indicator for whether the user who made the comment was logged in. Takes on values in {0, 1} |
+| ns | toxicity_annotated_comments.tsv |  Namespace of the discussion page the comment was made in. Takes on values in {user, article} |
+| sample | toxicity_annotated_comments.tsv | Indicates whether the comment came via random sampling or blocked {random, blocked} |
+| split | toxicity_annotated_comments.tsv | Describes if the comments where split into train, dev and test sets for the model. Takes on values in {train, dev, test} |
+| gender | toxicity_worker_demographics.tsv | The gender of the crowd-worker. Takes a value in {'male', 'female', and 'other'} |
+| english_first_language | toxicity_worker_demographics.tsv | Does the crowd-worker describe English as their first language. Takes a value in {0, 1} |
+| age_group | toxicity_worker_demographics.tsv | The age group of the crowd-worker. Takes on values in {'Under 18', '18-30', '30-45', '45-60', 'Over 60'} |
+| education | toxicity_worker_demographics.tsv | The highest education level obtained by the crowd-worker |
+| comment_length | User devrived | character count of the comments |
+| total_words | User devrived | word count of the comments |
+| binned_wordcount | User devrived | user generated bins to group the word count of the comments |
 
 ## Required resources
 
