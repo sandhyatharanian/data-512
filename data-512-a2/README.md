@@ -45,7 +45,7 @@ Dataset Used for this analysis are listed below. Please note that I have used al
 **Note-** 
 
  - Download the `.zip` files, extract them and upload them to the jupyter environment before proceeding to use the `.py` notebook.
- - As the `Toxicity` dataset is split into 2 files, please make sure to combine them in case using the dataset from `.zip` files. In order to skip this step, the user can directly download the dataset from [here](https://figshare.com/projects/Wikipedia_Talk/16731)
+ - As the `Toxicity` dataset is split into 2 files, please make sure to combine them in case using the dataset from `.zip` files. In order to skip this step, the user can directly download the datasets from [here](https://figshare.com/projects/Wikipedia_Talk/16731).
  - Duplicate columns created during the join was dropped inorder to have a clean dataset.
  - The dataset was checked for blank/null values. 
  
