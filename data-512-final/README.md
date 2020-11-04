@@ -1,4 +1,4 @@
-# ata 512A Au 20: Human-Centered Data Science Final Project - A case analysis on 911 Calls 
+## Data 512A Au 20: Human-Centered Data Science Final Project - A case analysis on 911 Calls 
 
 ## Purpose of the Proposed Project:
 
