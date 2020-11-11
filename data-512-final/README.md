@@ -8,7 +8,7 @@ Be it an extreme personal crisis and community wide disasters, 911 is the first 
 
 The dataset used for this project is obtained from the City of Cincinnati's computer aided dispatch (CAD) database which contains fire incident responses including emergency medical services (EMS) calls, fires, rescue incidents, and all other services handled by the Fire Department. This dataset is updated daily and is available as a public domain which allows to freely share and use the data for any purpose and without any restrictions.
 
-Link to the website can be found [here](https://data.cincinnati-oh.gov/Safety/Cincinnati-Fire-Incidents-CAD-including-EMS-ALS-BL/vnsz-a3wp) and the dataset can be accessed using the API Endpoint which can be found [here](https://data.cincinnati-oh.gov/resource/vnsz-a3wp.json)
+Link to the website can be found [here](https://data.cincinnati-oh.gov/Safety/Cincinnati-Fire-Incidents-CAD-including-EMS-ALS-BL/vnsz-a3wp) and the dataset can be accessed using the API Endpoint which can be found [here](https://data.cincinnati-oh.gov/resource/vnsz-a3wp.json).
 
 ## Data description
 
@@ -36,6 +36,7 @@ The dataset consists of the following attributes along with the description for 
 | community_council_neighborhood | Text | The listed neighborhood of the incident using community council defined boundaries |
 
 
+
 This data seem to contain the required information needed to evaluate the call volume and its origin. Neighborhood and community council neighborhood fields can be used as a close proxy to determine the origin. Latitude and longitude data can be used to perform further spatial analysis to understand the factors contributing to the call volume. Create time incident and arrival time primary unit fields can be used to understand the call response rate.
 
 **Note-** Initially, I wanted to analyze the City of Seattle dataset however the latitude and longitude informations are temporarily unavailable due to current bug. Next, I looked at exploring the SFO dataset, but it contains 5.41M records consuming all my system resources slowing down the system performance considerably.  
@@ -53,6 +54,6 @@ The call data has been anonymized to exclude any personally identifiable informa
 
 ## Unknowns and dependencies
 
-- City of Cincinnati’s Performance and Data Analytics team facilitates standard processing to most raw data prior to publication. Processing includes but is not limited: address verification, geocoding, decoding attributes, and addition of administrative areas (i.e. Census, neighborhoods, police districts, etc.).
-- To perform spatial analysis we would need to leverage other dataset. Furthermore, I need to do a few joins on the data given to address all questions I am interested in, which adds complexity to the data munging part of this project.
+- City of Cincinnati’s Performance and Data Analytics team facilitates standard processing to most raw data prior to publication. Processing includes but is not limited to address verification, geocoding, decoding attributes, and addition of administrative areas.
+- To perform enhanced spatial analysis, I might need to leverage other demographic datasets and perform a few joins which could add to the complexity in data munging part of this project.
 
