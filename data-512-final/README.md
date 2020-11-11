@@ -1,6 +1,6 @@
 ## Data 512A Au 20: Human-Centered Data Science Final Project Proposal - A case analysis on 911 Calls 
 
-## **Motivation/problem statement**
+## Motivation/problem statement
 
 Be it an extreme personal crisis and community wide disasters, 911 is the first access point for those seeking emergency response across America. 911 workers receive calls and expertly dispatch emergency service professionals and equipment to render life-saving assistance to those in need which is why we rely on this system to assure the public’s safety every day. 
 
