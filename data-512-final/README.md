@@ -14,6 +14,28 @@ Link to the website can be found [here](https://data.cincinnati-oh.gov/Safety/Ci
 
 The dataset consists of the following attributes along with the description for each column as provided by the Cincinnati fire incidents data dictionary.
 
+
+| Column | Datatype |
+| ------ | ------- | 
+| address_x | Text |
+| latitude_x | Number |
+| longitude_x | Number |
+| agency | Text |
+| create_time_incident | Floating Timestamp |
+| disposition_text | Text |
+| event_number | Text |
+| incident_type_id | Text |
+| incident_type_desc | Text |
+| neighborhood | Text |
+| arrival_time_primary_unit | Floating Timestamp |
+| beat | Text |
+| closed_time_incident | Floating Timestamp |
+| dispatch_time_primary_unit | Floating Timestamp |
+| cfd_incident_type | Text |
+| cfd_incident_type_group | Text |
+| community_council_neighborhood | Text |
+
+
 This data seem to contain the required information needed to evaluate the call volume and its origin. Neighborhood and community council neighborhood fields can be used as a close proxy to determine the origin. Latitude and longitude data can be used to perform further spatial analysis to understand the factors contributing to the call volume. Create time incident and arrival time primary unit fields can be used to understand the call response rate.
 
 **Note-** Initially, I wanted to analyze the City of Seattle dataset however the latitude and longitude informations are temporarily unavailable due to current bug. Next, I looked at exploring the SFO dataset, but it contains 5.41M records consuming all my system resources slowing down the system performance considerably.  
