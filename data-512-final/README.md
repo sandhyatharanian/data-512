@@ -15,25 +15,25 @@ Link to the website can be found [here](https://data.cincinnati-oh.gov/Safety/Ci
 The dataset consists of the following attributes along with the description for each column as provided by the Cincinnati fire incidents data dictionary.
 
 
-| Column | Datatype |
-| ------ | ------- | 
-| address_x | Text |
-| latitude_x | Number |
-| longitude_x | Number |
+| Column | Datatype | Description                                               |
+| ------ | ------- | ---------------------------------------------------------- |
+| address_x | Text | This attribute is the street name that the incident occurred on |
+| latitude_x | Number | The latitude coordinates of the incident |
+| longitude_x | Number | The longitude coordinates of the incident |
 | agency | Text |
-| create_time_incident | Floating Timestamp |
-| disposition_text | Text |
-| event_number | Text |
-| incident_type_id | Text |
-| incident_type_desc | Text |
-| neighborhood | Text |
-| arrival_time_primary_unit | Floating Timestamp |
-| beat | Text |
-| closed_time_incident | Floating Timestamp |
-| dispatch_time_primary_unit | Floating Timestamp |
-| cfd_incident_type | Text |
-| cfd_incident_type_group | Text |
-| community_council_neighborhood | Text |
+| create_time_incident | Floating Timestamp | This attribute is the date/timestamp when the response data was submitted into the CAD system |
+| disposition_text | Text | The disposition of each incident is the outcome of the incident response |
+| event_number | Text | The unique identifier of the incident|
+| incident_type_id | Text | The problem code of the incident that is used to describe the issue |
+| incident_type_desc | Text | The text description of the corresponding problem code (Incident_Type_Id)|
+| neighborhood | Text | The listed neighborhood of the incident using the Statistical Neighborhood Approximations (SNA) |
+| arrival_time_primary_unit | Floating Timestamp | This attribute is the date/timestamp when the first CFD apparatus arrived on scene at the incident |
+| beat | Text | This attribute indicates what fire response area the incident belongs to |
+| closed_time_incident | Floating Timestamp | This attribute is the date/timestamp when the incident is marked complete in the CAD system |
+| dispatch_time_primary_unit | Floating Timestamp | This attribute is the date/timestamp when first apparatus was dispatched to respond to an incident |
+| cfd_incident_type | Text | This attribute shows the breakdown of the incident type classification. ALS = Advance Life Service, BLS = Basic Life Service, FIRE = fire incident, MEDI = Medical Service Provided, OTHE = service provided by CFD but are not classified as a fire response |
+| cfd_incident_type_group | Text | The high-level incident type category for each incident |
+| community_council_neighborhood | Text | The listed neighborhood of the incident using community council defined boundaries |
 
 
 This data seem to contain the required information needed to evaluate the call volume and its origin. Neighborhood and community council neighborhood fields can be used as a close proxy to determine the origin. Latitude and longitude data can be used to perform further spatial analysis to understand the factors contributing to the call volume. Create time incident and arrival time primary unit fields can be used to understand the call response rate.
