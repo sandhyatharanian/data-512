@@ -1,4 +1,4 @@
-## Data 512A Au 20: Human-Centered Data Science Final Project Proposal - A case analysis on 911 Calls
+## Data 512A Au 20: Final Project Proposal - A case analysis on 911 Calls
 
 ## Motivation/problem statement 
 
