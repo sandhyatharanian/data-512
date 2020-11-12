@@ -2,7 +2,49 @@
 
 ## Motivation/problem statement 
 
-Be it an extreme personal crisis and community wide disasters, 911 is the first access point for those seeking emergency response across America. 911 workers receive calls and expertly dispatch emergency service professionals and equipment to render life-saving assistance to those in need which is why we rely on this system to assure the public’s safety every day. This project aims at analyzing the emergency calls dataset to discover hidden trends and patterns to determine areas of high call volume, perform spatial analysis to understand factors that contribute these high call volumes and look at the overall call response rate. Further, the analysis will seek to explore the various sources of non-emergency 911 calls and their relative proportions to one another which will be crucial to understanding the nuisances caused by the non-emergency calls.
+Be it an extreme personal crisis and community wide disasters, 911 is the first access point for those seeking emergency response across America. 911 workers receive calls and expertly dispatch emergency service professionals and equipment to render life-saving assistance to those in need which is why we rely on this system to assure the public’s safety every day. As per the 911 statistics published by the National Emergency Number Association [NENA](https://www.nena.org/page/911Statistics),
+
+> “An estimated 240 million calls are made to 9-1-1 in the U.S. each year.”
+
+Thus making the analysis of 911 calls a major initiative to help provide huge and largely untapped opportunity for researchers and practitioners to inform and transform policing policy and practice including developing alternatives to police emergency response. This project aims at analyzing the 911 call for service data to discover hidden trends and patterns to determine areas of high call volume, perform spatial analysis to understand factors that contribute these high call volumes and look at the overall call response rate. Further, the analysis will seek to explore the various sources of non-emergency 911 calls and their relative proportions to one another which will be crucial to understanding the nuisances caused by the non-emergency calls.
+
+## Background work
+
+Due to the magnitude of its importance and extent to which it causes an impact, there are several ongoing works by various organizations to understand this dataset. Below are some of the examples which served as a motivation factors for the inception of this project.
+
+**The Tamir Rice case**
+> On November 22, 2014, a 911 caller to the Cleveland Police Department reported a “guy with a gun” pointing it at people at a neighborhood recreation center. The 911 caller said the person was “probably a juvenile” and the gun was “probably fake.” The call was quickly relayed to the police dispatcher, who sent the closest available unit to the scene. However, the critical clarifying information—that the subject was probably a juvenile and the gun was probably fake—was never passed along to the responding officers. Minutes later, a Cleveland police officer and his trainee arrived at the scene, pulled their cruiser right up on the subject, and within seconds shot and killed 12-year-old Tamir Rice.
+
+An [article](https://www.policeforum.org/assets/EmergencyCommunications.pdf) published by the police executive Research forum spells out the key issues of withholding critical information from a 911 call dispatcher by examining controversial incidents involving police use of force. The Tamir Rice case highlighted the importance of the police dispatch function in these incidents. When 911 dispatchers are able to provide responding officers with critically important information about the nature of a call for service, there is a much better chance of a successful outcome. But if officers arrive at the scene unaware of key facts, the risks to everyone multiply.
+
+Another [article](https://www.ncjrs.gov/pdffiles1/nij/226874.pdf) published in the National Institute of Justice NIJ journal, uses 911 calls for service, field interview reports, crime incident narrative reports and site security logs to detect terrorism threats. An excerpt from the article states,
+
+> “Our study showed that simple analytic processes could produce operationally relevant findings from 911 calls.”
+
+In the [paper](http://hpcf-files.umbc.edu/research/papers/IS789_Project_Report-HPCF-2019-29.pdf), “Analysis and Prediction of 911 Calls based on Location using Spark Big Data Platform”, the authors use various ML algorithms to predict the number of calls from a particular location using longitude and latitude data with an intention to help manage police resources.
+
+## Research questions & methodology
+
+The above articles, papers and various other incidents like Tamir Rice where a trivial error may have been the difference between life and death of a child calls for modest changes addressing the 911 systems. With this in mind, I intend to analyze the dataset and explore answers to some of the basic questions like the most common reason for calling 911, neighborhoods making the most frequent 911 calls and the number of non-emergency calls made. In addition to the above questions, I would like to research some more areas as specified in my questions below.
+
+### Q1 – What is the average call response rate for each of the incident type?
+Incident types are classified as ALS (Advance Life Service), BLS (Basic Life Service), FIRE (fire incident), MEDI (Medical Service Provided) and OTHE (service provided by CFD that are not classified as a fire response). It would be interesting to look at the pattern here to see if some incident types have a higher response rate, as it should be for life services than others.
+
+### Method
+I intend to use the Create_Time_Incident field which records when the response data was submitted and the Arrival_Time_Primary_Unit which is the attribute that records when the first Cincinnati Fine department team arrived on scene at the incident. A call response rate is defined as difference between the above two field which will then be converted into seconds.I have chosen this field as it would be the right approach to calculate the response rate and converting it to seconds would be helpful in understanding the pattern that are intuitive, easy to interpret.
+
+### Q2 – What reasons contribute more to non-emergency 911 calls?
+911 lines are designated for emergency calls, such as reporting a crime in progress, reporting a fire, or requesting an ambulance. Using 911 for non-emergency calls may delay help for people caught in real emergencies.
+
+### Method
+The reasons for non-emergency 911 calls is not a straightforward number and needs to be obtained by extracting disposition codes from ‘disposition text’ columns and performing a lookup with the fire disposition codes published in the City of Cincinnati website. This approach would give us a good guesstimate of the number of non-emergency calls and the reasons contributing to it. 
+
+### Q3 – Determine the pattern between Day of the Week and Time of the Day (Morning, Afternoon, Evening, and Night) for the 911 calls.
+Knowing the most common calls that are made in the evening, for example, could be a very useful information. Identifying such patterns help predicting where the police force might be needed the most at a given time and hence aid in better resource management.
+
+### Method
+To enable this pattern finding, the CREATE_TIME_INCIDENT column will be divided into two columns-day of week and time of day. The column will be split such that each date will be represented as the respective day of the week, for example Monday, Tuesday and so on. The time of day will be divided into four different values: Morning, Afternoon, Evening and Night based on the time. The time 6 AM to less than 12 PM will be classified as Morning, 12 PM to less than 4 PM will be classified as Afternoon, 4 PM to less than 9 PM will be classified as Evening and time from 9 PM to less than 6 AM will be classified as Night.
+
 
 ## Data used
 
