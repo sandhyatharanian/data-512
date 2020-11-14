@@ -6,7 +6,7 @@ Be it an extreme personal crisis and community wide disasters, 911 is the first 
 
 > “An estimated 240 million calls are made to 9-1-1 in the U.S. each year.”
 
-Thus making the analysis of 911 calls a major initiative to help provide huge and largely untapped opportunity for researchers and practitioners to inform and transform policing policy and practice including developing alternatives to police emergency response. This project aims at analyzing the 911 call for service data to discover hidden trends and patterns to determine areas of high call volume, perform spatial analysis to understand factors that contribute these high call volumes and look at the overall call response rate. Further, the analysis will seek to explore the various sources of non-emergency 911 calls and their relative proportions to one another which will be crucial to understanding the nuisances caused by the non-emergency calls.
+Thus making the analysis of 911 calls a major initiative to help provide huge and largely untapped opportunity for researchers and practitioners to inform and transform policing policy and practice including developing alternatives to police emergency response. This project aims at analyzing the 911 call for service data to discover hidden trends and patterns to determine areas of high call volume, perform spatial analysis to understand factors that contribute high call volumes and look at the overall call response rate. Further, the analysis will seek to explore the various sources of non-emergency 911 calls and their relative proportions to one another which will be crucial to understanding the nuisances caused by the non-emergency calls.
 
 ## Background work
 
